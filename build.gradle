@@ -20,6 +20,14 @@ dependencies {
 
 }
 
+dependencies {
+    testImplementation 'junit:junit:4.13'
+}
+
+test {
+    useJUnit()
+}
+
 test {
     useTestNG()
 }

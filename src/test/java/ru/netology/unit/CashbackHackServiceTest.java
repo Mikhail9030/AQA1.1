@@ -1,14 +1,14 @@
 package ru.netology.unit;
 
-import org.testng.ITest;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
-    @Test
+    @org.testng.annotations.Test
     public void shouldCalculateIfAmountCorrect() {
         int amount = 5700;
         int actual = service.remain(amount);
@@ -16,7 +16,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual,expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void shouldCalculateIfAmountInCorrect() {
         int amount = 5000;
         int actual = service.remain(amount);
@@ -24,7 +24,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual,expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void shouldCalculateIfAmountZero() {
         int amount = 0;
         int actual = service.remain(amount);
