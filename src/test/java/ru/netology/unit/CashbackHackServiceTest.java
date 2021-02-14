@@ -1,6 +1,5 @@
 package ru.netology.unit;
 
-import org.testng.ITest;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
